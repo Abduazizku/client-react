@@ -1,0 +1,214 @@
+body {
+     margin: 0;
+     font-family: Arial, sans-serif;
+     background: #f3f3f3;
+   }
+   
+   .login-btn {
+     width: 100%;
+     padding: 12px;
+     background: #007bff;
+     border: none;
+     border-radius: 8px;
+     color: white;
+     font-size: 16px;
+     cursor: pointer;
+     transition: 0.3s;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   
+   .login-btn:hover {
+     background: #0056b3;
+   }
+   
+   .login-btn:disabled {
+     background: #7da9e6;
+     cursor: not-allowed;
+   }
+   
+   .spinner {
+     border: 3px solid rgba(255, 255, 255, 0.5);
+     border-top: 3px solid white;
+     border-radius: 50%;
+     width: 20px;
+     height: 20px;
+     animation: spin 1s linear infinite;
+   }
+   
+   @keyframes spin {
+     0% { transform: rotate(0deg); }
+     100% { transform: rotate(360deg); }
+   }
+   
+   .login-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+   }
+   
+   .login-form {
+     background: white;
+     padding: 30px;
+     border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+     width: 350px;
+   }
+   
+   .login-form h2 {
+     text-align: center;
+     margin-bottom: 20px;
+     color: #333;
+   }
+   
+   .form-group {
+     margin-bottom: 15px;
+   }
+   
+   .form-group label {
+     display: block;
+     margin-bottom: 6px;
+     font-weight: bold;
+     color: #444;
+   }
+   
+   .form-group input {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #bbb;
+     border-radius: 8px;
+     font-size: 14px;
+     outline: none;
+   }
+   
+   .form-group input:focus {
+     border-color: #007bff;
+     box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+   }
+   
+  
+
+   .dashboard {
+     height: 100vh;
+     width: 99.8%;
+     background-color: white;
+     color: black;
+     display: flex;
+     flex-direction: column;
+     border: 2px solid black;
+   }
+   
+   .header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-bottom: 2px solid black;
+     padding: 10px 20px;
+   }
+   
+   .header-left {
+     display: flex;
+     align-items: center;
+     gap: 15px;
+   }
+   
+   .header h1 {
+     color: black;
+   }
+   
+   .header-right {
+     display: flex;
+     align-items: center;
+     gap: 15px;
+   }
+   
+   .menu-btn {
+     border: 2px solid black;
+     background: transparent;
+     color: black;
+     padding: 5px 12px;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: 0.3s;
+   }
+   
+   .menu-btn:hover {
+     background: black;
+     color: white;
+   }
+   
+   .exit-btn {
+     border: 2px solid black;
+     background: transparent;
+     color: black;
+     padding: 5px 15px;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: 0.3s;
+   }
+   
+   .exit-btn:hover {
+     background: black;
+     color: white;
+   }
+   
+   .body {
+     flex: 1;
+     display: flex;
+   }
+   
+   .sidebar {
+     width: 200px;
+     border-right: 2px solid black;
+     padding: 15px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+   }
+   
+   .side-btn {
+     border: 2px solid black;
+     background: transparent;
+     color: black;
+     padding: 10px;
+     border-radius: 5px;
+     cursor: pointer;
+     text-align: left;
+     transition: 0.3s;
+   }
+   
+   .side-btn:hover {
+     background: black;
+     color: white;
+   }
+   
+   .content {
+     flex: 1;
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   
+   .create-btn {
+     position: absolute;
+     top: 20px;
+     right: 20px;
+     border: 2px solid black;
+     background: transparent;
+     color: black;
+     padding: 8px 20px;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: 0.3s;
+   }
+   
+   .create-btn:hover {
+     background: black;
+     color: white;
+   }
+   
+  
+   
